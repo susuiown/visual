@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>susui Visual</title>
+
+    <link rel="stylesheet" href="./lib/css/reset.css">
+    <link rel="stylesheet" href="./lib/css/common.css">
+    <link rel="stylesheet" href="./lib/css/fonts.css">
+    <link rel="stylesheet" href="./lib/css/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="./lib/css/aos.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/visual.css">
+
+    <script src="./lib/js/gsap.min.js"></script>
+    <script src="./lib/js/ScrollTrigger.min.js"></script>
+    <script src="./lib/js/jquery-1.12.4.min.js"></script>
+    <script src="./lib/js/swiper-bundle.min.js"></script>
+    <script src="./lib/js/aos.js"></script>
+
+    <script src="./lib/js/lenis.min.js"></script>
+    <script src="./js/custom.js"></script>
+</head>
+
+<body oncontextmenu="return false;">
+    <header id="header">
+        <div class="hd_wrap inner">
+            <h1> SUSUI </h1>
+            <nav class="gnb">
+                <a href="https://susuiown.github.io/visual/" class="active">Visual</a>
+                <a href="https://susuiown.github.io/photography/">Photography</a>
+                <a href="https://susuiown.github.io/about/">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="content">
+        <section class="main_visual">
+            <div class="inner">
+
+                <div class="tab_menu">
+
+                    <button>
+                        <span class="title">서담채 인스타</span>
+                        <span class="type">Graphic</span>
+                    </button>
+                    <button>
+                        <span class="title">월간 로컬브랜드</span>
+                        <span class="type">Graphic</span>
+                    </button>
+                    <button>
+                        <span class="title">내일을 위한 내 일의 여행</span>
+                        <span class="type">Graphic</span>
+                    </button>
+                    <button>
+                        <span class="title">자녀에게 다가가는 대화법</span>
+                        <span class="type">Graphic</span>
+                    </button>
+                    <button>
+                        <span class="title">기프트달력</span>
+                        <span class="type">Graphic</span>
+                    </button>
+                    <button>
+                        <span class="title">지구별가게 시즌2</span>
+                        <span class="type">Graphic</span>
+                    </button>
+                    <button>
+                        <span class="title">희녹 홈페이지</span>
+                        <span class="type">Web</span>
+                    </button>
+                    <button>
+                        <span class="title">이케아 홈페이지</span>
+                        <span class="type">Web</span>
+                    </button>
+                    <button>
+                        <span class="title">폴스타 홈페이지</span>
+                        <span class="type">Web</span>
+                    </button>
+                    <button>
+                        <span class="title">리움 홈페이지</span>
+                        <span class="type">Web</span>
+                    </button>
+                    <button>
+                        <span class="title">이솝 홈페이지</span>
+                        <span class="type">Web</span>
+                    </button>
+                    <button>
+                        <span class="title">필라이크잇</span>
+                        <span class="type">Branding</span>
+                    </button>
+                    <button>
+                        <span class="title">헬로우솝</span>
+                        <span class="type">Branding</span>
+                    </button>
+                </div>
+
+                <div class="tab_content">
+                    <div class="con thumbnails">
+                        <div class="thumb" data-index="0"><video autoplay muted loop playsinline><source src="./images/visual/인스타/인스타썸네일.mov" type="video/mp4"></video></div>
+                        <div class="thumb" data-index="1"><video autoplay muted loop playsinline><source src="./images/visual/월간로컬브랜드/월간썸네일.mov" type="video/mp4"></video></div>
+                        <div class="thumb" data-index="2"><img src="./images/visual/내일의여행/여행썸네일.gif" alt="내일의 여행"></div>
+                        <div class="thumb" data-index="3"><img src="./images/visual/2023자녀코칭/코칭썸네일.webp" alt="자녀코칭"></div>
+                        <div class="thumb" data-index="4"><img src="./images/visual/2024기프트달력/기프트썸네일.webp" alt="서담채 기프트달력"></div>
+                        <div class="thumb" data-index="5"><video autoplay muted loop playsinline><source src="./images/visual/지구별/지구별썸네일.mov" type="video/mp4"></video></div>
+                        <div class="thumb" data-index="6"><img src="./images/visual/web희녹/희녹썸네일.webp" alt="희녹 홈페이지"></div>
+                        <div class="thumb" data-index="7"><img src="./images/visual/web이케아/이케아썸네일.webp" alt="이케아 홈페이지"></div>
+                        <div class="thumb" data-index="8"><video autoplay muted loop playsinline><source src="./images/visual/web폴스타/폴스타썸네일.mp4" type="video/mp4"></video></div>
+                        <div class="thumb" data-index="9"><img src="./images/visual/web리움/리움썸네일.webp" alt="리움 홈페이지"></div>
+                        <div class="thumb" data-index="10"><video autoplay muted loop playsinline><source src="./images/visual/web이솝/이솝썸네일.mp4" type="video/mp4"></video></div>
+                        <div class="thumb" data-index="11"><img src="./images/visual/엽서/엽서썸네일.webp" alt="필라이크잇"></div>
+                        <div class="thumb" data-index="12"><img src="./images/visual/비누/비누썸네일.webp" alt="헬로우솝"></div>
+                    </div>
+
+
+
+                    <div class="con 서담채인스타">
+                        <strong>서담채 소셜미디어 디자인</strong>
+                        <p>Client: 서담채 · 내부 프로젝트<br>Work: Design<br>Type: Graphic (Promotion)<br>Date: 2022.08 - 2024.06</p>
+                        <p class="desc">
+                            서담채는 제주에서 책과 취향을 매개로 사람과 경험을 연결하는 크리에이티브 커뮤니티입니다.
+                            소셜미디어 디자인을 담당하며 반복되는 프로그램을 새롭게 보여주기 위해 다양한 시도를 했습니다. 내부 브랜딩 인터뷰와 리디자인을 통해 컬러·폰트·비주얼 톤을 확립하고, 사진 보정과 콘텐츠 제작 가이드를 체계화했습니다. 이를 바탕으로 SNS 콘텐츠와 홍보물에 일관된 톤 앤 매너를 적용해 브랜드 이미지를 정제된 방식으로 전달했습니다. 그 결과 젊은 고객층 유입이 전년 대비 약 20% 증가하는 성과로 이어졌습니다.
+                            <br>*재직 당시 참여한 프로젝트입니다.   
+                        </p>
+                        <div class="rotate">
+                            <figure>
+                                <iframe src="https://fabulous-channel-899011.framer.app/" title="2024" style="width:100%; height:100vh; border: none;" allowfullscreen></iframe>
+                            </figure>
+                        </div>
+                        <div class="sns">
+                            <div class="fix">
+                                <figure>
+                                    <iframe src=" https://particular-room-345885.framer.app/" title="" style="border: none;" allowfullscreen></iframe>
+                                </figure>
+                            </div>
+                            <div class="scroll">
+                                <figure>
+                                    <img src="./images/visual/인스타/scroll.webp" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="chuseok">
+                            <img src="./images/visual/추석/chuseok01.webp" alt="">
+                            <img src="./images/visual/추석/chuseok02.gif" alt="">
+                        </div>
+                        <div class="dec">
+                            <img src="./images/visual/인스타/insta.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="con 월간로컬브랜드">
+                        <strong>〈월간 로컬브랜드〉 비주얼 아이덴티티 디자인</strong>
+                        <p>Client: 서담채 · 내부 프로젝트<br>Work: Design<br>Type: Graphic (Promotion)<br>Date: 2023.03 - 2024.02</p>
+                        <p class="desc">
+                            〈월간 로컬브랜드〉는 제주 로컬 크리에이터를 매달 한 팀씩 소개하는 시리즈형 토크 프로그램입니다. 
+                            포스터, SNS 콘텐츠, 채널 배너 등 각 매체의 성격에 맞춰 시각 언어를 구분해 설계했습니다. 포스터는 브랜드의 제품·공간·작품을 보여주는 이미지를 전면에 배치하고, 하단에 월,일자를 강조해 달력적 성격을 부여했습니다. 이를 통해 시리즈가 하나의 아카이브로 축적되고, 매달 다음 브랜드를 기다리게 하는 리듬을 형성하고자 했습니다. 디지털 콘텐츠는 서담채 브랜드의 분위기를 시각적으로 반영하며 톤과 구조를 유연하게 조정했고, ‘LOCAL’ 타이포그래피 모티프를 반복 사용해 시리즈 간의 일관성을 유지했습니다.
+                            <br>*재직 당시 참여한 프로젝트입니다.
+                        </p>
+                        <div class="kakao">
+                            <figure>
+                                <iframe src=" https://cherished-pictogram-194584.framer.app/" title="My Framer" style="width:100%; height:100vh; border: none;" allowfullscreen></iframe>
+                            </figure>
+                        </div>
+                        <div class="insta">
+                            <div class="back">
+                                <img src="./images/visual/월간로컬브랜드/인스타그램.svg" alt="">
+                            </div>
+                            <div class="slide_wrap">
+                                <div class="swiper main_local_slide">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide itm">
+                                            <a href="">
+                                                <figure>
+                                                    <img src="./images/visual/월간로컬브랜드/01-해브어스멜.jpg" alt="">
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide itm">
+                                            <a href="">
+                                                <figure>
+                                                    <img src="./images/visual/월간로컬브랜드/02-제주맥주.jpg" alt="">
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide itm">
+                                            <a href="">
+                                                <figure>
+                                                    <img src="./images/visual/월간로컬브랜드/03-오피스제주.jpg" alt="">
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide itm">
+                                            <a href="">
+                                                <figure>
+                                                    <img src="./images/visual/월간로컬브랜드/04-이시보막걸리.jpg" alt="">
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide itm">
+                                            <a href="">
+                                                <figure>
+                                                    <img src="./images/visual/월간로컬브랜드/05-뭐랭하맨.webp" alt="">
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide itm">
+                                            <a href="">
+                                                <figure>
+                                                    <img src="./images/visual/월간로컬브랜드/05-디앤디.webp" alt="">
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide itm">
+                                            <a href="">
+                                                <figure>
+                                                    <img src="./images/visual/월간로컬브랜드/07-지토툰.webp" alt="">
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide itm">
+                                            <a href="">
+                                                <figure>
+                                                    <img src="./images/visual/월간로컬브랜드/08-우연못.webp" alt="">
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide itm">
+                                            <a href="">
+                                                <figure>
+                                                    <img src="./images/visual/월간로컬브랜드/09-카페단단.webp" alt="">
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide itm">
+                                            <a href="">
+                                                <figure>
+                                                    <img src="./images/visual/월간로컬브랜드/10-일로와제주.jpg" alt="">
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide itm">
+                                            <a href="">
+                                                <figure>
+                                                    <img src="./images/visual/월간로컬브랜드/11-베드라디오.jpg" alt="">
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide itm">
+                                            <a href="">
+                                                <figure>
+                                                    <img src="./images/visual/월간로컬브랜드/12-귤메달.jpg" alt="">
+                                                </figure>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="youtube">
+                            <img src="./images/visual/월간로컬브랜드/월간로컬유튜브.webp" alt="">
+                        </div>
+                        <div class="poster">
+                            <img src="./images/visual/월간로컬브랜드/월간로컬포스터.jpg" alt="">
+                        </div>
+                        <div class="photo">
+                            <figure>
+                                <iframe src="https://sure-oval-348082.framer.app/" title="My Framer" style="width:100%; height:100vh; border: none;" allowfullscreen></iframe>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="con 내일의여행">
+                        <strong>〈내일을 위한 내 일의 여행〉 프로그램 디자인</strong>
+                        <p>Client: 서담채 · 내부 프로젝트<br>Work: Design<br>Type: Graphic (Promotion)<br>Date: 2023.10</p>
+                        <p class="desc">
+                            〈내일을 위한 내 일의 여행〉은 제주 로컬 크리에이터와의 만남을 통해 도시 직장인들이 일과 삶을 재정비할 수 있도록 기획된 체험형 여행 프로그램입니다.
+                            'OFF에서 ON으로 전환되는 나의 일'을 상징하는 스위치 GIF 애니메이션을 키비주얼로 활용하고, 활력과 회복의 메시지를 담은 비비드 오렌지(#FF5C1C)를 메인 컬러로 사용했습니다. 리플렛, SNS 콘텐츠, 현장 안내물 등 다양한 매체에 일관된 톤 앤 매너를 적용했습니다.
+                            <br>*재직 당시 참여한 프로젝트입니다.
+                        </p>
+                        <div class="set01">
+                            <img class="svg_bg" src="./images/visual/내일의여행/1_01.svg" alt="">
+                            <div class="gif_wrap">
+                                <img class="gif_itm" src="./images/visual/내일의여행/1_011.gif" alt="">
+                            </div>
+                        </div>
+                        <div class="set02">
+                            <img class="bg_2" src="./images/visual/내일의여행/2_bg.jpg" alt="">
+                            <div class="fade_wrap">
+                                <div class="swiper project_set021_slide">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide itm">
+                                            <img src="./images/visual/내일의여행/2_01.webp" alt="">
+                                        </div>
+                                        <div class="swiper-slide itm">
+                                            <img src="./images/visual/내일의여행/2_02.webp" alt="">
+                                        </div>
+                                        <div class="swiper-slide itm">
+                                            <img src="./images/visual/내일의여행/2_03.webp" alt="">
+                                        </div>
+                                        <div class="swiper-slide itm">
+                                            <img src="./images/visual/내일의여행/2_04.webp" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper project_set022_slide">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide itm">
+                                            <img src="./images/visual/내일의여행/2_011.webp" alt="">
+                                        </div>
+                                        <div class="swiper-slide itm">
+                                            <img src="./images/visual/내일의여행/2_022.webp" alt="">
+                                        </div>
+                                        <div class="swiper-slide itm">
+                                            <img src="./images/visual/내일의여행/2_033.webp" alt="">
+                                        </div>
+                                        <div class="swiper-slide itm">
+                                            <img src="./images/visual/내일의여행/2_044.webp" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="set034_wrap">
+                            <img class="set03" src="./images/visual/내일의여행/3.webp" alt="">
+                            <img class="set04" src="./images/visual/내일의여행/1_011.gif" alt="">
+                        </div>
+                    </div>
+                    <div class="con 자녀코칭">
+                        <strong>서담채 마음코칭 워크숍 〈자녀에게 다가가는 대화법〉 포스터</strong>
+                        <p>Client: 서담채 · 내부 프로젝트<br>Work: Design<br>Type: Graphic (Promotion)<br>Date: 2023.03</p>
+                        <p class="desc">
+                            워크숍의 핵심 가치인 "부모의 자기 이해를 통한 자녀 이해"라는 메시지를 시각적 스토리로 풀어냈습니다.
+                            첫 번째 행은 '1번 버튼'으로 시작합니다. 이를 통해 부모가 가장 먼저 해야 할 일은 자녀가 아닌 자기 자신을 이해하는 것임을 강조했습니다. 버튼을 누르면 거울이 나타나고, 그 안에는 아직 자신을 잘 모르는 '텅 빈 나'가 비춰집니다. 이어서 내면을 채워가며 '가득 찬 나'로 변화하고, 세 번째 행에서는 거울 뒤에 자녀가 등장합니다. 자기 자신을 이해하고 내면을 채운 부모만이 비로소 자녀와 진정으로 마주할 준비가 됩니다. 마지막 장면에서는 부모와 자녀가 서로 마주 보며 대화하는 모습을 통해, 부모의 마음과 사랑이 온전히 전해지고 자녀가 그것을 받아들이는 순간을 표현했습니다.
+                            <br>*재직 당시 참여한 프로젝트입니다.                    
+                        </p>
+                        <img src="./images/visual/2023자녀코칭/2023poster.webp" alt="">
+                        <img src="./images/visual/2023자녀코칭/2023poster02.webp" alt="">
+                    </div>
+                    <div class="con 서담채달력">
+                        <strong>2024 서담채 기프트달력</strong>
+                        <p>Client: 서담채 · 내부 프로젝트<br>Work: Design<br>Type: Graphic <br>Date: 2024.01</p>
+                        <p class="desc">
+                            프로그램 참여자를 위해 제작한 배포용 캘린더입니다. 단순한 일정 관리 도구를 넘어서, 브랜드의 가치를 일상에서 자연스럽게 경험할 수 있는 굿즈로 기획했습니다.
+                            참여자의 시점에 맞춰 월별로 캘린더를 배포하여, 방문 경험이 자연스럽게 브랜드와의 지속적 관계로 이어지도록 합니다. 앞면에는 회사 소개를 고정 배치해 브랜드 메시지가 자연스럽게 각인되도록 했으며, 뒷면에는 달력과 체크리스트를 구성해 실용성을 높였습니다. 또한 매달 다른 짧은 명언을 담아, 사용자에게 작은 정서적 환기를 제공합니다. 이 캘린더는 단순한 기념품이 아닌, 긍정적 사용자 경험과 브랜드 인식을 확장하는 매개체 역할을 합니다.
+                            <br>*재직 당시 참여한 프로젝트입니다.
+                        </p>
+                        <figure>
+                            <iframe src="https://orange-innovation-804338.framer.app/" title="2024" style="width:100%; height:100vh; border: none;" allowfullscreen></iframe>
+                        </figure>
+                    </div>
+                    <div class="con 지구별가게">
+                        <strong>지구별가게 시즌2 오픈 기념 이벤트 프로젝트</strong>
+                        <p>Client: 지구별가게 · 외부 프로젝트<br>Work: Design<br>Type: Graphic (Promotion)<br>Date: 2022.10</p>
+                        <p class="desc">
+                            제주 제로웨이스트 스토어 〈지구별가게〉의 시즌2 리뉴얼은 상품 판매 공간을 넘어 소비자 경험 기반의 콘텐츠 공간으로 확장하기 위한 프로젝트입니다.
+                            제주의 물과 자연에서 영감을 얻은 블루와 그린을 중심 컬러로 사용하고, 네온 옐로와 바이올렛을 더해 젊고 경쾌한 분위기를 구현했습니다. 노토산스와 Montserrat 조합으로 명확하고 직관적인 정보 전달을 지향했으며, SNS 콘텐츠부터 포스터, 리플렛까지 다양한 매체에 일관된 톤 앤 매너를 적용했습니다.
+                            <br>*재직 당시 참여한 프로젝트입니다.
+                        </p>
+                        <div class="zigu01">
+                            <figure>
+                                <iframe src="https://foolish-ways-522458.framer.app/" title="My Framer Embed" style="width:100%; height:100vh; border: none;" allowfullscreen></iframe>
+                            </figure>
+                        </div>
+                        <img src="./images/visual/지구별/목업.webp" alt="">
+                        <div class="zigu02">
+                            <figure>
+                                <iframe src="https://grateful-stick-168580.framer.app/" title="My Framer" style="width:100%; height:250vh; border: none;" allowfullscreen></iframe>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="con 희녹">
+                        <strong>[희녹] 홈화면 리디자인 및 반응형 구현</strong>
+                        <p>Client: 개인 작업<br>tool: Visual Studio Code (HTML, CSS, JS)<br>Type: Web<br>Date: 2025.07</p>
+                        <p class="desc">
+                            친환경 라이프스타일 브랜드 '희녹(Hinok)'의 브랜드 철학을 효과적으로 전달할 수 있는 홈페이지 메인 화면 리디자인과 반응형 웹 구현을 진행했습니다.
+                            이 개인 프로젝트는 브랜드 가치 전달의 문제점을 해결하는 데 중점을 두었습니다. "브랜드 인식 - 제품 탐색 - 서비스 이해"라는 단일 플로우로 정보 우선순위를 재구성해 사용자가 브랜드 스토리와 가치를 먼저 인식할 수 있게 했습니다. 제품 영역에는 슬라이드 UI를 도입하여 시각적 몰입감을 높였고, 서비스 소개 부분은 간결한 정보와 정돈된 UI로 사용자 이해를 도왔습니다. PC, 태블릿, 모바일 등 모든 환경에서 일관된 경험과 각 디바이스에 최적화된 UI를 제공하는 반응형 디자인을 적용했습니다.
+                        </p>
+                        <div class="web_btn">
+                            <a href="https://suemake.github.io/fin-hinok/" class="btn">
+                                홈페이지 보기
+                                <img class="right_icon" src="./images/icon/arrow-up-right.svg" alt="화살표 아이콘">
+                            </a>
+                            <a href="https://www.figma.com/design/WXSsk1YZcflKYJbPJbYxLp/%ED%9D%AC%EB%85%B9?node-id=0-1&t=nNftY5BW6td7Y7Bt-1" class="btn">
+                                피그마 보기
+                                <img class="right_icon" src="./images/icon/arrow-up-right.svg" alt="화살표 아이콘">
+                            </a>
+                        </div>
+                        <img src="./images/visual/web희녹/희녹썸네일02webp.webp" alt="project05">
+                    </div>
+                    <div class="con 이케아">
+                        <strong>[이케아] 홈화면 리디자인 및 반응형 구현</strong>
+                        <p>Client: 개인 작업<br>tool: Visual Studio Code (HTML, CSS, JS)<br>Type: Web<br>Date: 2025.06</p>
+                        <p class="desc">
+                            이케아 홈 화면의 정보 흐름과 레이아웃을 간결하게 재구성했습니다. 공식 사이트의 구조와 콘텐츠를 참고해, 프로모션 영역은 슬라이드 UI로, 서비스 소개 영역은 카드 레이아웃으로 구현하여 정보 전달력을 높였습니다. 핵심 문구와 CTA를 위계적으로 배치함으로써 시각적 몰입도와 사용자 행동 유도 간 균형을 맞췄습니다. 이러한 접근으로 사용자가 한눈에 정보를 파악하고 원하는 행동으로 자연스럽게 이어지는 인터페이스를 구현했습니다.
+                        </p>
+                        <div class="web_btn">
+                            <a href="https://suemake.github.io/fin-ikea/" class="btn">
+                                홈페이지 보기
+                                <img class="right_icon" src="./images/icon/arrow-up-right.svg" alt="화살표 아이콘">
+                            </a>
+                            <a href="https://www.figma.com/design/tVxHBmVQIv7QgV5xD3FTjh/%EC%9D%B4%EC%BC%80%EC%95%84?node-id=0-1&t=xXm405NP0vMaSjfq-1" class="btn">
+                                피그마 보기
+                                <img class="right_icon" src="./images/icon/arrow-up-right.svg" alt="화살표 아이콘">
+                            </a>
+                        </div>
+                        <img src="./images/visual/web이케아/이케아썸네일02.webp" alt="project05">
+                    </div>
+                    <div class="con 폴스타">
+                        <strong>[폴스타] 홈화면 및 반응형 구현</strong>
+                        <p>Client: 개인 작업<br>tool: Visual Studio Code (HTML, CSS, JS)<br>Type: Web<br>Date: 2025.04</p>
+                        <p class="desc">
+                            전기차 브랜드 'Polestar'의 공식 홈페이지 화면을 동일하게 구현한 개인 프로젝트입니다. 레이아웃, 타이포그래피, 인터랙션을 직접 코드로 재현하며 브랜드가 추구하는 미니멀한 디자인 언어와 UX 패턴을 학습했습니다.
+                        </p>
+                        <div class="web_btn">
+                            <a href="https://suemake.github.io/fin-polestar/" class="btn">
+                                홈페이지 보기
+                                <img class="right_icon" src="./images/icon/arrow-up-right.svg" alt="화살표 아이콘">
+                            </a>
+                        </div>
+                        <img src="./images/visual/web폴스타/폴스타썸네일02.webp" alt="project05">
+                    </div>
+                    <div class="con 리움">
+                        <strong>[리움] 홈화면 리디자인 및 반응형 구현</strong>
+                        <p>Client: 개인 작업<br>tool: Visual Studio Code (HTML, CSS, JS)<br>Type: Web<br>Date: 2025.06</p>
+                        <p class="desc">
+                            리움 미술관 공식 홈페이지의 홈 화면을 클론 코딩하여 브랜드의 미니멀한 디자인 언어와 정보 구조를 학습했습니다. 불필요한 장식을 제거하고 핵심 콘텐츠 중심으로 단순화했으며, 사용자가 전시 - 소장품 - 뉴스 순서로 이어지는 탐색 흐름을 직관적으로 경험할 수 있도록 설계했습니다. 사이트에 진입했을 때 브랜드가 가진 미니멀하고 세련된 감각, 그리고 몰입감 있는 첫인상을 강조하고자 했습니다.
+                        </p>
+                        <div class="web_btn">
+                            <a href="https://suemake.github.io/fin-leeum/" class="btn">
+                                홈페이지 보기
+                                <img class="right_icon" src="./images/icon/arrow-up-right.svg" alt="화살표 아이콘">
+                            </a>
+                            <a href="https://www.figma.com/design/fdvhyWvEDaXIkca6jcFs2t/%EB%A6%AC%EC%9B%80?node-id=0-1&t=Xp9vNGinPu7pmtRl-1" class="btn">
+                                피그마 보기
+                                <img class="right_icon" src="./images/icon/arrow-up-right.svg" alt="화살표 아이콘">
+                            </a>
+                            
+                        </div>
+                        <img src="./images/visual/web리움/리움썸네일02.webp" alt="project05">
+                    </div>
+                    <div class="con 이솝">
+                        <strong>[이솝] 홈화면 및 반응형 구현</strong>
+                        <p>Client: 개인 작업<br>tool: Visual Studio Code (HTML, CSS, JS)<br>Type: Web<br>Date: 2025.05</p>
+                        <p class="desc">
+                            스킨케어 브랜드 Aesop의 홈페이지 홈 화면을 재구성하여 구현했습니다. 기존 사이트가 브랜드 스토리 중심이었다면, 제 작업은 학습 목적으로 제품 탐색에 집중하고 구조를 단순화해 사용자가 원하는 정보를 더 빠르게 찾을 수 있도록 설계했습니다.
+                        </p>
+                        <div class="web_btn">
+                            <a href="https://suemake.github.io/fin-aesop/" class="btn">
+                                홈페이지 보기
+                                <img class="right_icon" src="./images/icon/arrow-up-right.svg" alt="화살표 아이콘">
+                            </a>
+                        </div>
+                        <img src="./images/visual/web이솝/이솝썸네일02.webp" alt="project05">
+                    </div>
+                    <div class="con 필라이크잇">
+                        <strong>필라이크잇 엽서 브랜드 디자인</strong>
+                        <p>Client: 개인작업<br>Work: Design<br>Type: Branding<br>Date: 2021.02</p>
+                        <p class="desc">
+                            필라이크잇은 “~하고 싶다”라는 긍정적인 마음에서 출발한 이름입니다. 여행 속 즐거운 순간과 따뜻한 추억을 사진으로 담아 엽서를 만들었고, 전하는 이와 받는 이가 서로 좋은 에너지를 나눌 수 있기를 바라는 마음을 담았습니다. 브랜드 아이덴티티는 이 의도를 시각적으로 표현하는 데 초점을 두었습니다. 로고는 자유로운 곡선으로 감정의 흐름을 나타냈으며, 엽서와 봉투, 패키지, SNS까지 일관되게 적용해 따뜻하고 감성적인 톤을 유지했습니다. 필라이크잇은 단순한 엽서가 아니라 긍정적인 감정을 주고받는 매개체로 기획한 프로젝트입니다.
+                        </p>
+                        <img src="./images/visual/엽서/엽서.webp" alt="필라이크잇">
+                        <img src="./images/visual/엽서/엽서사진.webp" alt="">
+                    </div>              
+                    <div class="con 헬로우솝">
+                        <strong>헬로우솝 패키지 디자인</strong>
+                        <p>Client: 개인작업<br>Work: Design<br>Type: Branding<br>Date: 2022.04</p>
+                        <p class="desc">
+                            헬로우솝은 정직한 원료와 친환경 철학을 주제로 설정한 가상 수제 비누 브랜드 프로젝트입니다. 패키지는 친환경 종이를 사용한 단순한 구조로 제작해 브랜드의 지속가능성을 표현했습니다. 색상은 따뜻한 베이지와 라이트 오렌지를 선택해 소비자에게 친근한 이미지를 전달하고자 했습니다. 서체는 산세리프를 사용해 투명하고 정직한 인상을 주었으며, 슬로건을 활용한 원형 엠블럼을 더해 브랜드 메시지를 직관적으로 보여주었습니다. 최종 결과물은 단품 포장, 선물용 박스, 스티커까지 확장해 브랜드 아이덴티티의 일관성을 유지했습니다.
+                        </p>
+                        <img src="./images/visual/비누/비누.webp" alt="헬로우솝">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="inner">
+            <!-- <span>susuiown@gmail.com</span> -->
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,222 @@
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  /* background: #fff; */
+}
+
+#header .hd_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+  max-width: none;
+}
+
+#header .gnb {
+  display: flex;
+  gap: 16px;
+}
+
+/* #header .gnb>a {
+  display: inline-block;
+  padding: 12px 16px;
+  backdrop-filter: blur(6px);
+  border-radius: 100px;
+  background: rgba(0, 0, 0, 0.1);
+  color: #000;
+
+  transition: 0.6s;
+}
+
+#header .gnb>a:hover {
+  background: rgba(0, 0, 0, 0.5);
+} */
+
+#header .gnb a {
+  padding: 12px 16px;
+  border-radius: 100px;
+  background: rgba(0, 0, 0, 0.05);
+  color: #444;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.4s;
+}
+
+#header .gnb a:hover {
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+#header .gnb a.active {
+  background: #000;
+  color: #fff;
+}
+
+/* 웹 버튼 */
+.web_btn {
+  display: flex;
+  gap: 16px;
+}
+.web_btn a {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  padding: 8px 16px;
+  color: #000;
+  background: #fff;
+  border: 0.5px solid #696969;
+
+  overflow: hidden;
+  white-space: nowrap;
+
+  margin-bottom: 24px;
+}
+
+.web_btn a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 0;
+  background: #000;
+  color: #fff;
+  transition: 0.4s;
+}
+
+.web_btn a:hover::before {
+  height: 100%;
+}
+
+.web_btn a:hover {
+  color: #fff;
+}
+
+.web_btn a:hover .right_icon {
+  filter: brightness(0) invert(1);
+}
+
+.btn {
+  font-size: 14px;
+}
+
+.inner {
+  /* max-width: 1410px; */
+  margin: 0 60px;
+}
+
+.inner h1 {
+  font-size: 40px;
+}
+
+/* web */
+/* 스크롤바 숨기기 */
+::-webkit-scrollbar {
+  width: 0 !important;
+  /* 수직 뿐 아니라 가로도 숨기고 싶다면 height:0 추가 */
+  height: 0 !important;
+  background: transparent !important;
+}
+
+/* Firefox */
+body {
+  scrollbar-width: none;
+}
+
+/* IE, Edge */
+body {
+  -ms-overflow-style: none;
+}
+
+.txt {
+  margin-bottom: 16px;
+  display: grid;
+  min-height: 0;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.txt strong {
+  font-size: 16px;
+}
+
+.left {
+  flex: 2;
+}
+
+.right {
+  flex: 2;
+}
+
+.info {
+  display: flex;
+  gap: 32px;
+}
+
+@media (max-width: 768px) {
+  /* r: 좌우 여백/헤더 여백 더 축소 */
+  .inner {
+    margin: 0 20px;
+  }
+  #header .hd_wrap {
+    padding: 20px 0;
+  }
+
+  /* r: 타이틀 더 축소 */
+  .inner h1 {
+    font-size: 24px;
+  }
+
+  /* r: GNB 가로 스크롤로 전환 */
+  #header .gnb {
+    gap: 8px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  #header .gnb a {
+    padding: 8px 12px;
+    font-size: 12px; /* 8/4의 배수만 사용 */
+    white-space: nowrap;
+  }
+
+  /* r: 그리드 1열 전환 */
+  .txt {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .txt strong {
+    font-size: 12px;
+  }
+
+  .info {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 390px) {
+  /* r: 최소 여백 */
+  .inner {
+    margin: 0 16px;
+  }
+  #header .hd_wrap {
+    padding: 16px 0;
+  }
+
+  /* r: 타이틀 최소 크기 */
+  .inner h1 {
+    font-size: 20px;
+  }
+
+  /* r: 버튼 크기 유지(터치 타겟 확보) */
+  #header .gnb a {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}
